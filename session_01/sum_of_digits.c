@@ -9,13 +9,16 @@ Declare variables num, digit1, digit2, and digit3. Prompt the user to enter a th
 */
 int main() {
     int num, digit1, digit2, digit3;
+    
     printf("Enter 3-digit number: ");
     scanf("%d", &num); 
+    
     digit3 = num % 10;
     num /= 10;
     digit2 = num % 10;
     num /= 10;
     digit1 = num;
+    
     int sum = digit1 + digit2 + digit3;
     printf("Sum of digits: %d", sum);
     return 0;

@@ -8,10 +8,14 @@ displays the same on the screen as output.
 int main() {
     float salary;
     int age;
+    
     printf("Enter salary: ");
     scanf("%f", &salary);
+    
     printf("Enter age: ");
     scanf("%d", &age);
+    
     printf("Salary: %f, age: %d\n", salary, age);
+    
     return 0;
 }

@@ -11,15 +11,21 @@ area = sqrt(s * (s - a) * (s - b) * (s - c)), where a, b, and c are the lengths 
 */
 int main() {
     float side1, side2, side3;
+    
     printf("Enter length of triangle sides,\n");
+    
     printf("Side 1: ");
     scanf("%f", &side1);
+    
     printf("Side 2: ");
     scanf("%f", &side2);
+    
     printf("Side 3: ");
     scanf("%f", &side3);
+    
     float semi_peri = (side1 + side2 + side3)/2;
     float area = sqrt(semi_peri*(semi_peri-side1)*(semi_peri-side2)*(semi_peri-side3));
     printf("Area: %f", area);
+    
     return 0;
 }

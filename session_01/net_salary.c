@@ -10,13 +10,17 @@ int main() {
     int HRA = 150;
     int TA = 450;
     int others = 450;
+    
     const float DA_percentage = 0.12;
     const float PF_percentage = 0.14;
     const float IT_percentage = 0.15;
+    
     float DA = DA_percentage * basic_salary;
     float PF = PF_percentage * basic_salary;
     float IT = IT_percentage * basic_salary;
+    
     float net_salary = basic_salary + DA + HRA + TA + others - (PF + IT);
     printf("Net salary: %f", net_salary);
+    
     return 0;   
 }
