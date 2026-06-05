@@ -16,20 +16,26 @@ int main() {
     const char FORTRAN[] = "Cobol";
     const char PASCAL[] = "Pascal";
     const char VSC[] = "Visual C++";
-
-    if (type == 'B' || type == 'b') {
+    
+    switch (type) {
+    case 'B': case 'b':
         printf("%s", BASIC);
-    } else  if (type == 'C' || type == 'c') {
+        break;
+    case 'C': case 'c':
         printf("%s", COBOL);
-    } else  if (type == 'F' || type == 'f') {
+        break;
+    case 'F': case 'f':
         printf("%s", FORTRAN);
-    } else  if (type == 'P' || type == 'p') {
+        break;
+    case 'P': case 'p':
         printf("%s", PASCAL);
-    } else  if (type == 'V' || type == 'v') {
+        break;
+    case 'V': case 'v':
         printf("%s", VSC);
-    } else {
+        break;
+    default:
         printf("Other character is not valid.");
-        return -1;
+        break;
     }
 
     return 0;

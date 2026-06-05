@@ -9,25 +9,30 @@
 */
 int main() {
     float salary, total_salary;
-    char grade[1];
+    char grade;
     
     printf("Enter salary: ");
     scanf("%f", &salary);
     
     printf("Enter grade: ");
-    scanf("%c", &grade);
+    scanf(" %c", &grade);
     
-    const ALLOWANCE_A = 300;
-    const ALLOWANCE_B = 200;
-    const ALLOWANCE_OTHER = 100;
+    const int ALLOWANCE_A = 300;
+    const int ALLOWANCE_B = 200;
+    const int ALLOWANCE_OTHER = 100;
 
-    if (grade == 'A') {
+    switch (grade) {
+    case 'A':
         total_salary = salary + ALLOWANCE_A;
-    } else if (grade == 'B') {
+        break;
+    case 'B':
         total_salary = salary + ALLOWANCE_B;
-    } else {
+        break;
+    default:
         total_salary = salary + ALLOWANCE_OTHER;
+        break;
     }
-
+    
+    printf("Total salary: %f", total_salary);
     return 0;
 }
