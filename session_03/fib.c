@@ -18,8 +18,8 @@ int main() {
     long long f1 = 1;
     long long fn = 0;
     
-    printf("%d, ", f0);
-    printf("%d, ", f1);
+    printf("%d ", f0);
+    printf("%d ", f1);
     
     fn = f1 + f0;
     
