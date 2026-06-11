@@ -2,7 +2,7 @@
 #include <string.h>
 
 #define MAX_SIZE 100
-#define MIN_SIZE 1
+#define MIN_SIZE 0
 
 void input_arr(int size, int arr[size]) {
     for(int i = 0; i < size; i++) {
@@ -17,6 +17,10 @@ void input_arr(int size, int arr[size]) {
 }
 
 void output_arr(int size, int arr[size]) {
+    if (size == 0) {
+        printf("\nNothing to display\n\n");
+        return;
+    }
     printf("\n[");
     for(int i = 0; i < size; i++) {
         if(i == size - 1) {
@@ -29,6 +33,10 @@ void output_arr(int size, int arr[size]) {
 }
 
 void output_desc_arr(int size, int arr[size]) {
+    if (size == 0) {
+        printf("\nNothing to display\n\n");
+        return;
+    }
     int desc_arr[size];
     int t_size = size;
 
@@ -54,6 +62,10 @@ void output_desc_arr(int size, int arr[size]) {
 }
 
 void check_odd(int size, int arr[size]) {
+    if (size == 0) {
+        printf("\nNothing to display\n\n");
+        return;
+    }
     for(int i = 0; i < size; i++) {
         if(arr[i] % 2 == 0) {
             printf("\nNot odd\n\n");
@@ -64,6 +76,10 @@ void check_odd(int size, int arr[size]) {
 }
 
 void find_value(int size, int arr[size]) {
+    if (size == 0) {
+        printf("\nNothing to display\n\n");
+        return;
+    }
     int value;
     printf("\nPlease enter a value: ");
     scanf("%d", &value);
@@ -77,6 +93,10 @@ void find_value(int size, int arr[size]) {
 }
 
 void display_prime(int size, int arr[size]) {
+    if (size == 0) {
+        printf("\nNothing to display\n\n");
+        return;
+    }
     printf("\n");
     for(int i = 0; i < size; i++) {
         int n = arr[i];
